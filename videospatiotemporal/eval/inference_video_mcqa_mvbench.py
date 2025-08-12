@@ -15,11 +15,11 @@ from torch.utils.data import Dataset, DataLoader
 
 import sys
 sys.path.append('./')
-from videorefer import model_init, mm_infer
-from videorefer.utils import disable_torch_init
+from videospatiotemporal import model_init, mm_infer
+from videospatiotemporal.utils import disable_torch_init
 from functools import partial
-from videorefer.mm_utils import process_video
-from videorefer.constants import NUM_FRAMES
+from videospatiotemporal.mm_utils import process_video
+from videospatiotemporal.constants import NUM_FRAMES
 
 # NOTE: Ignore TypedStorage warning, which refers to this link~(https://github.com/pytorch/pytorch/issues/97207#issuecomment-1494781560)
 warnings.filterwarnings('ignore', category=UserWarning, message='TypedStorage is deprecated')
