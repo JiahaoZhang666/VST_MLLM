@@ -10,14 +10,14 @@ from typing import Dict, Optional, Sequence, List
 import torch
 import sys
 sys.path.append('./')
-from videorefer import model_init, mm_infer
+from videospatiotemporal import model_init, mm_infer
 from pycocotools import mask as maskUtils
 import numpy as np
-from videorefer.mm_utils import process_video
+from videospatiotemporal.mm_utils import process_video
 from functools import partial
 from matplotlib import pyplot as plt
 from PIL import Image
-from videorefer.utils import disable_torch_init        
+from videospatiotemporal.utils import disable_torch_init        
 import pycocotools.mask as maskUtils
 from torch.utils.data import Dataset, DataLoader
 
